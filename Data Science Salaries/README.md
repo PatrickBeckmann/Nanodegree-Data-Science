@@ -8,3 +8,22 @@ After visualizing and analyzing my data I tried to answeer the following questio
   3. Does the remote-ratio influence the salary?
 
 In my [blog post on medium](https://medium.com/@patrick.beckmann/analysis-of-data-science-salaries-2d84f14cefee) I also wrote about my findings with this project.
+
+The Analysis uses following libraries:
+Data
+- numpy==1.20.3
+- pandas==1.3.4
+
+Visualisation
+- seaborn==0.11.2
+- matplotlib==3.4.3
+- squarify==0.4.3
+- plotly==5.11.0
+
+Model Training
+- sklearn==1.2
+
+References:
+https://www.kaggle.com/code/varunsaikanuri/data-science-job-salaries-eda <br>
+https://www.kaggle.com/code/wonduk/eda-on-data-science-job-salaries <br>
+https://www.kaggle.com/code/priyark/data-science-job-salaries-plotly-interactive-graph/notebook
