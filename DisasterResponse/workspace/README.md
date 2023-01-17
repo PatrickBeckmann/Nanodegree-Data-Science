@@ -1,12 +1,15 @@
 # Disaster Response Pipeline Project
 
+This project classifies messages into 36 different categories to aid Disaster Respinse Teams filtering incoming messages and requests and improve the help they can provide.
+
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in database
-        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterCleaned.db`
     - To run ML pipeline that trains classifier and saves
-        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+        `python models/train_classifier.py data/DisasterCleaned.db models/classifier.pkl`
+        (the model can be further optimized by adding or adjusting parameters in the "build_model()" function)
 
 2. Go to `app` directory: `cd app`
 
