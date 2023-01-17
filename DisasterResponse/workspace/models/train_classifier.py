@@ -48,7 +48,7 @@ def build_model():
     parameters = {
             'vect__max_df': (0.5, 0.75), #20 minuten
             'vect__min_df': (0.2, 0.4),
-            #'tfidf__smooth_idf': (True, False),
+            'tfidf__smooth_idf': (True, False),
             'clf__estimator__n_estimators': [20, 50],
             'clf__estimator__criterion': ['gini', 'entropy']
         }
