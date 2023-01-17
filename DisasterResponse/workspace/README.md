@@ -2,7 +2,7 @@
 
 This project classifies messages into 36 different categories to aid Disaster Respinse Teams filtering incoming messages and requests and improve the help they can provide.
 
-### Instructions:
+### Instructions (when using the app for the first time and no model has been trained):
 1. Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in database
@@ -16,3 +16,10 @@ This project classifies messages into 36 different categories to aid Disaster Re
 3. Run your web app: `python run.py`
 
 4. Click the `PREVIEW` button to open the homepage
+
+### Instructions after the model is already trained
+1. Go to `app` directory: `cd app`
+
+2. Run your web app: `python run.py`
+
+3. Click the `PREVIEW` button to open the homepage
