@@ -63,6 +63,7 @@ def clean_data(df):
     return df
     
 def save_data(df, database_filename):
+    #Save the DataFrame to a database and override the database if there is already a former version
     engine = create_engine('sqlite:///'+database_filename)
     df.to_sql("DisasterCleaned", engine, if_exists='replace', index=False)
 
