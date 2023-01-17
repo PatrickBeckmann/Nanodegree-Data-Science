@@ -23,3 +23,6 @@ This project classifies messages into 36 different categories to aid Disaster Re
 2. Run your web app: `python run.py`
 
 3. Click the `PREVIEW` button to open the homepage
+
+The App runs in the Workspace of Udacity, but not yet in Windows, since create_engine from sqlalchemy won't work and joblip from sklrarn.externals can't be imported. 
+Since the goal of the project was to provide a running code in the given Workspace the code has not been modified to work on Windows.
