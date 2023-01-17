@@ -35,6 +35,7 @@ def clean_data(df):
 
         for value in column_values:
             number= value.split("-")[1]
+            number = number.replace("2", "1")
             # convert column from string to numeric
             column_values_number.append(int(number))
 
@@ -55,11 +56,15 @@ def clean_data(df):
     df= df.drop_duplicates()
     # check number of duplicates
     number_of_duplicates= len(df[df.duplicated()])
+    
+    for column in categories:
+        print(column)
+        print(categories[column].value_counts())
     return df
     
 def save_data(df, database_filename):
     engine = create_engine('sqlite:///'+database_filename)
-    df.to_sql("DisasterCleaned", engine, index=False)
+    df.to_sql("DisasterCleaned", engine, if_exists='replace', index=False)
 
 
 def main():

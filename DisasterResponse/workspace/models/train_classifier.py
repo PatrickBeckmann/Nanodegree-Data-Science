@@ -38,14 +38,13 @@ def tokenize(text):
 
 
 def build_model():
-    #builds and trains the model
+    
     pipeline = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
         ('tfidf', TfidfTransformer()),
         ('clf', MultiOutputClassifier(RandomForestClassifier()))
     ])
-    
-    #by adding new parameters or adjusting the existing ones, the model can be further improved
+
     parameters = {
             'vect__max_df': (0.5, 0.75), #20 minuten
             'vect__min_df': (0.2, 0.4),
@@ -58,7 +57,7 @@ def build_model():
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
-    #test the model and print the results for evaluation
+    
     y_pred = model.predict(X_test)
     y_pred = y_pred.astype('int')
     y_test = Y_test.astype('int')
@@ -69,7 +68,6 @@ def evaluate_model(model, X_test, Y_test, category_names):
     
 
 def save_model(model, model_filepath):
-    #saves the model to use it with the App
     pickle.dump(model,open(model_filepath,'wb'))
 
 
