@@ -1,0 +1,7 @@
+python-math=0.0.1
+matplotlib=1.16.0
+seaborn=0.12.2
+plotly=5.13.0
+jubyterlab>=3
+ipywidgets>=7.6
+jupyter-dash=0.4.2
