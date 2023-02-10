@@ -15,15 +15,15 @@ If the results need to be improved, implementing GridSearchCV to find the best p
 
 All neccessary packages are referenced in the Requirements.txt file.
 File Description:
-data - contains the three different datasets: 
-* portfolio.json - containing ids and meta information about the offers
-* profile.json - containing ids and demographic information about the customers
-* transcript.json - containng information about the records for transactions, offers received, offers viewed, and offers completed
-Starbucks_Capstone_notebook.ipynb - Notebook containing the analysis and the model training used in the project
-Requirements.txt - Containing the requirements and packages used for the environment the analysis run in
-Success of Starbuck's Offers_by Patrick Beckmann_Feb, 2023_Medium.html - The html containing the blog post I made on medium about that project
-pic1.png - a picture used in the description of the notebook
-pic2.png - a picture used in the description of the notebook
+* data - contains the three different datasets: 
+  * portfolio.json - containing ids and meta information about the offers
+  * profile.json - containing ids and demographic information about the customers
+  * transcript.json - containng information about the records for transactions, offers received, offers viewed, and offers completed
+* Starbucks_Capstone_notebook.ipynb - Notebook containing the analysis and the model training used in the project
+* Requirements.txt - Containing the requirements and packages used for the environment the analysis run in
+* Success of Starbuck's Offers_by Patrick Beckmann_Feb, 2023_Medium.html - The html containing the blog post I made on medium about that project
+* pic1.png - a picture used in the description of the notebook
+* pic2.png - a picture used in the description of the notebook
 
 I also wrote an [article on medium](https://medium.com/@patrick.beckmann/success-of-starbucks-offers-7f64df027a07) about my project.
 
