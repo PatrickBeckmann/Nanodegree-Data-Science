@@ -13,6 +13,10 @@ Trying several Supervised Learning Models.
 Evaluating the models using the chosen metric (Accuracy)- Choosing the best model among them.
 If the results need to be improved, implementing GridSearchCV to find the best parameters (in order to improve the performance of the chosen model).
 
+The Support Vector Machine model with Radial Basic Function and the parameter C at 100 (SVC RBF 2) delivered the best results in both Accuracy and F1-Score. With an accuracy of almost 80% the model can predict whether an offer will be successful or not. Looking at the feature effects you can see that the gender has a huge effect on the success of an offer.
+
+Before launching an offer I would suggest using the SVC RBF2 model to calculate if an offer would be successful. We can calculate the success rate of a campaign based on the forecasting of the model. When launching this model into production it can probably be improved even further by some more hyperparameter tuning. Because this takes a lot of time and processing power I limited the training to changing the parameter C for a single itteration. With more time there hould be further improvements to be made.
+
 All neccessary packages are referenced in the Requirements.txt file.
 File Description:
 * data - contains the three different datasets: 
